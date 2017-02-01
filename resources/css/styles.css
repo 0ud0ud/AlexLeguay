@@ -1,0 +1,262 @@
+/* ---------------------------- */
+
+
+/* BASIC SETUP
+/* -----------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #B2EBF2;
+	color: #555;
+	font-family: 'Quicksand', 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+	zoom: 1
+}
+
+.clearfix:after {
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+
+/* ---------------------------- */
+
+
+/* REUSABLE
+/* -----------------------------*/
+
+section {
+	padding: 80px 0;
+}
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.box {
+	padding: 1%;
+}
+
+
+/* ---------------------------- */
+
+
+/* HEADINGS
+/* -----------------------------*/
+
+h1,
+h2,
+h3 {
+	font-weight: 300;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	color: #fff;
+	font-size: 240%;
+	word-spacing: 4px;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 100%;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+
+h2:after {
+	display: block;
+	height: 2px;
+	background-color: #00BCD4;
+	content: " ";
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+h3 {
+	font-size: 110%;
+	margin-bottom: 15px;
+}
+
+
+/* ------------PARAGRAHS---------------- */
+
+.long-copy {
+	line-height: 145%;
+	width: 70%;
+	margin-left: 15%;
+}
+
+.box p {
+	font-size: 90%;
+	line-height: 145%;
+}
+
+
+/* ------------ICONS---------------- */
+
+.icon-big {
+	font-size: 300%;
+	display: inline;
+	color: #00BCD4;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.icon-small {
+	font-size: 120%;
+	display: inline;
+	width: 30px;
+	text-align: center;
+	color: #00BCD4;
+	line-height: 120%;
+	vertical-align: middle;
+	margin-top: -5px;
+	margin-right: 10px;
+}
+
+
+/* LINKS -----------------------------*/
+
+a:link,
+a:visited {
+	color: #00BCD4;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #00BCD4;
+}
+
+a:hover,
+a:active {
+	color: #555;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.2s, color 0.2;
+}
+
+
+/* BUTTONS -----------------------------*/
+
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+	background-color: #00BCD4;
+	border: 1px solid #00BCD4;
+	color: #fff;
+	margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+	border: 1px solid #00BCD4;
+	color: #00BCD4;
+}
+
+.btn:hover,
+.btn:active {
+	background-color: #0097A7;
+}
+
+.btn-full:hover,
+.btn-full:active {
+	border: 1px solid #0097A7;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+	border: 1px solid #0097A7;
+	color: #fff;
+}
+
+
+/* ---------------------------- */
+
+
+/* HEADER
+/* -----------------------------*/
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(img/keyboard.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.hero-text-box {
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hero-text-box a {
+	font-size: 150%;
+	margin-right: 10px;
+	border-bottom: none;
+}
+
+.hero-text-box a:hover {
+	color: #555;
+	transition: color 0.2;
+}
+
+.logo {
+	height: 100px;
+	width: auto;
+	float: left;
+	margin-top: 0px;
+}
+
+.main-nav {
+	float: right;
+	list-style: none;
+	margin-top: 55px;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.main-nav li a:visited,
+.main-nav li a:link {
+	padding: 8px 0px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+	border-bottom: 2px solid #00BCD4;
+}
